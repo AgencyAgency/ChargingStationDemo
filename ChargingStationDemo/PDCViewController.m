@@ -8,6 +8,8 @@
 
 #import "PDCViewController.h"
 
+#define METERS_PER_MILE 1609.344
+
 @interface PDCViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end
@@ -24,8 +26,10 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    [self.mapView setCenterCoordinate:userLocation.coordinate
-                             animated:YES];
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate,
+                                                                       0.5*METERS_PER_MILE,
+                                                                       0.5*METERS_PER_MILE);
+    [_mapView setRegion:viewRegion animated:YES];
 }
 
 @end
