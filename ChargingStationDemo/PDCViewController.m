@@ -29,7 +29,7 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate,
                                                                        0.5*METERS_PER_MILE,
                                                                        0.5*METERS_PER_MILE);
-    [_mapView setRegion:viewRegion animated:YES];
+    [self.mapView setRegion:viewRegion animated:YES];
 }
 
 @end
