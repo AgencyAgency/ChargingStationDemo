@@ -19,6 +19,7 @@
 		CFBB5F5B17C9E86D005F8BC1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBB5F5917C9E86D005F8BC1 /* MainStoryboard.storyboard */; };
 		CFBB5F5E17C9E86D005F8BC1 /* PDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5F5D17C9E86D005F8BC1 /* PDCViewController.m */; };
 		CFBB5F6517C9EC1D005F8BC1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBB5F6417C9EC1D005F8BC1 /* MapKit.framework */; };
+		CFBB5F6B17C9F04F005F8BC1 /* IolaniLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CFBB5F6A17C9F04F005F8BC1 /* IolaniLocation.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		CFBB5F5C17C9E86D005F8BC1 /* PDCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDCViewController.h; sourceTree = "<group>"; };
 		CFBB5F5D17C9E86D005F8BC1 /* PDCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCViewController.m; sourceTree = "<group>"; };
 		CFBB5F6417C9EC1D005F8BC1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CFBB5F6A17C9F04F005F8BC1 /* IolaniLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = IolaniLocation.gpx; path = ../IolaniLocation.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				CFBB5F5917C9E86D005F8BC1 /* MainStoryboard.storyboard */,
 				CFBB5F5C17C9E86D005F8BC1 /* PDCViewController.h */,
 				CFBB5F5D17C9E86D005F8BC1 /* PDCViewController.m */,
+				CFBB5F6A17C9F04F005F8BC1 /* IolaniLocation.gpx */,
 				CFBB5F4817C9E86D005F8BC1 /* Supporting Files */,
 			);
 			path = ChargingStationDemo;
@@ -168,6 +171,7 @@
 				CFBB5F5617C9E86D005F8BC1 /* Default@2x.png in Resources */,
 				CFBB5F5817C9E86D005F8BC1 /* Default-568h@2x.png in Resources */,
 				CFBB5F5B17C9E86D005F8BC1 /* MainStoryboard.storyboard in Resources */,
+				CFBB5F6B17C9F04F005F8BC1 /* IolaniLocation.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

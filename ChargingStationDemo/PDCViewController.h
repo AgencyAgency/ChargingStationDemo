@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface PDCViewController : UIViewController
+@interface PDCViewController : UIViewController <MKMapViewDelegate>
 
 @end

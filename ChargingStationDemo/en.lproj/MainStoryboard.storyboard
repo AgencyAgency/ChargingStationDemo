@@ -17,7 +17,11 @@
                                     <barButtonItem systemItem="refresh" id="ssz-xZ-W1W"/>
                                 </items>
                             </toolbar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="89Z-ds-IZS"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="89Z-ds-IZS">
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="7lY-nc-cOi"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -30,6 +34,9 @@
                             <constraint firstItem="89Z-ds-IZS" firstAttribute="bottom" secondItem="BT1-vV-KuS" secondAttribute="top" type="default" id="vAg-jc-QfC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="89Z-ds-IZS" id="gRc-cF-cvW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,6 +48,9 @@
         </class>
         <class className="PDCViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PDCViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

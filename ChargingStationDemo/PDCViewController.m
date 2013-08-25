@@ -9,7 +9,7 @@
 #import "PDCViewController.h"
 
 @interface PDCViewController ()
-
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end
 
 @implementation PDCViewController
@@ -20,10 +20,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - Map Delegates
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.mapView setCenterCoordinate:userLocation.coordinate
+                             animated:YES];
 }
 
 @end
