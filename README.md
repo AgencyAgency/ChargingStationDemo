@@ -7,6 +7,8 @@ This is based on a few things out on the interweb:
 
 Frameworks added:
 * MapKit
+* AddressBook
+* CoreLocation
 
 ‘Iolani School lat long for debuging in the simulator:
 * Latitude: 21.285865

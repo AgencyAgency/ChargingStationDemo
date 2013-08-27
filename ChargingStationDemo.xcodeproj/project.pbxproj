@@ -20,6 +20,10 @@
 		CFBB5F5E17C9E86D005F8BC1 /* PDCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5F5D17C9E86D005F8BC1 /* PDCViewController.m */; };
 		CFBB5F6517C9EC1D005F8BC1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBB5F6417C9EC1D005F8BC1 /* MapKit.framework */; };
 		CFBB5F6B17C9F04F005F8BC1 /* IolaniLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CFBB5F6A17C9F04F005F8BC1 /* IolaniLocation.gpx */; };
+		CFBB5F6E17CA4C8B005F8BC1 /* ChargingStationLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5F6D17CA4C8B005F8BC1 /* ChargingStationLocation.m */; };
+		CFBB5F7017CA5385005F8BC1 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBB5F6F17CA5385005F8BC1 /* AddressBook.framework */; };
+		CFBB5F7217CC8AC9005F8BC1 /* ev_charging_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = CFBB5F7117CC8AC9005F8BC1 /* ev_charging_stations.json */; };
+		CFBB5F7417CC8C22005F8BC1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBB5F7317CC8C22005F8BC1 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,11 @@
 		CFBB5F5D17C9E86D005F8BC1 /* PDCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDCViewController.m; sourceTree = "<group>"; };
 		CFBB5F6417C9EC1D005F8BC1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CFBB5F6A17C9F04F005F8BC1 /* IolaniLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = IolaniLocation.gpx; path = ../IolaniLocation.gpx; sourceTree = "<group>"; };
+		CFBB5F6C17CA4C8B005F8BC1 /* ChargingStationLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChargingStationLocation.h; sourceTree = "<group>"; };
+		CFBB5F6D17CA4C8B005F8BC1 /* ChargingStationLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChargingStationLocation.m; sourceTree = "<group>"; };
+		CFBB5F6F17CA5385005F8BC1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CFBB5F7117CC8AC9005F8BC1 /* ev_charging_stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ev_charging_stations.json; sourceTree = "<group>"; };
+		CFBB5F7317CC8C22005F8BC1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBB5F7417CC8C22005F8BC1 /* CoreLocation.framework in Frameworks */,
+				CFBB5F7017CA5385005F8BC1 /* AddressBook.framework in Frameworks */,
 				CFBB5F6517C9EC1D005F8BC1 /* MapKit.framework in Frameworks */,
 				CFBB5F4217C9E86D005F8BC1 /* UIKit.framework in Frameworks */,
 				CFBB5F4417C9E86D005F8BC1 /* Foundation.framework in Frameworks */,
@@ -78,6 +89,8 @@
 		CFBB5F4017C9E86D005F8BC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFBB5F7317CC8C22005F8BC1 /* CoreLocation.framework */,
+				CFBB5F6F17CA5385005F8BC1 /* AddressBook.framework */,
 				CFBB5F6417C9EC1D005F8BC1 /* MapKit.framework */,
 				CFBB5F4117C9E86D005F8BC1 /* UIKit.framework */,
 				CFBB5F4317C9E86D005F8BC1 /* Foundation.framework */,
@@ -94,6 +107,8 @@
 				CFBB5F5917C9E86D005F8BC1 /* MainStoryboard.storyboard */,
 				CFBB5F5C17C9E86D005F8BC1 /* PDCViewController.h */,
 				CFBB5F5D17C9E86D005F8BC1 /* PDCViewController.m */,
+				CFBB5F6C17CA4C8B005F8BC1 /* ChargingStationLocation.h */,
+				CFBB5F6D17CA4C8B005F8BC1 /* ChargingStationLocation.m */,
 				CFBB5F6A17C9F04F005F8BC1 /* IolaniLocation.gpx */,
 				CFBB5F4817C9E86D005F8BC1 /* Supporting Files */,
 			);
@@ -103,6 +118,7 @@
 		CFBB5F4817C9E86D005F8BC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFBB5F7117CC8AC9005F8BC1 /* ev_charging_stations.json */,
 				CFBB5F4917C9E86D005F8BC1 /* ChargingStationDemo-Info.plist */,
 				CFBB5F4A17C9E86D005F8BC1 /* InfoPlist.strings */,
 				CFBB5F4D17C9E86D005F8BC1 /* main.m */,
@@ -172,6 +188,7 @@
 				CFBB5F5817C9E86D005F8BC1 /* Default-568h@2x.png in Resources */,
 				CFBB5F5B17C9E86D005F8BC1 /* MainStoryboard.storyboard in Resources */,
 				CFBB5F6B17C9F04F005F8BC1 /* IolaniLocation.gpx in Resources */,
+				CFBB5F7217CC8AC9005F8BC1 /* ev_charging_stations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +202,7 @@
 				CFBB5F4E17C9E86D005F8BC1 /* main.m in Sources */,
 				CFBB5F5217C9E86D005F8BC1 /* PDCAppDelegate.m in Sources */,
 				CFBB5F5E17C9E86D005F8BC1 /* PDCViewController.m in Sources */,
+				CFBB5F6E17CA4C8B005F8BC1 /* ChargingStationLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
